@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" style="box-sizing: border-box;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;overflow-x: hidden;font-family: Verdana,sans-serif;font-size: 15px;line-height: 1.5;">
+<title style="box-sizing: inherit;">Alert</title>
+<meta charset="UTF-8" style="box-sizing: inherit;">
+
+
+
+<body style="box-sizing: inherit;margin: 0;font-family: Verdana,sans-serif;font-size: 15px;line-height: 1.5;">
+
+<!-- Header -->
+<header class="content" align="center" style="box-sizing: inherit;display: block;margin-left: auto;margin-right: auto;max-width: 980px;">
+  <img src="https://www.salesforce.com/news/wp-content/uploads/sites/3/2020/08/MuleSoft820.jpg" alt="Mulesoft Alert" width="40%" style="padding-top: 2%;box-sizing: inherit;border-style: none;">
+  
+  
+  
+ 
+<!-- Page content -->
+<div class="content padding-large" style="box-sizing: inherit;margin-left: auto;margin-right: auto;max-width: 980px;padding: 12px 24px!important;">
+
+  
+
+  <!-- Alert -->
+  <div class="light-grey margin-top" style="box-sizing: inherit;color: #000!important;background-color: #f1f1f1!important;margin-top: 16px!important;">
+  
+    <h2 style="background-color: #00a1df;color: #00a1df;box-sizing: inherit;font-size: 30px;font-family: &quot;Segoe UI&quot;,Arial,sans-serif;font-weight: 400;margin: 10px 0;"> Alert </h2>
+    
+    <h6 align="left" style="margin: 3%;box-sizing: inherit;font-size: 16px;font-family: &quot;Segoe UI&quot;,Arial,sans-serif;font-weight: 400;">Hello,<br style="box-sizing: inherit;">
+
+You are receiving this alert because:<br style="box-sizing: inherit;">
+
+The application <b style="box-sizing: inherit;font-weight: bolder;"><u style="box-sizing: inherit;"><i style="box-sizing: inherit;">fni-corefunding-prc</i></u></b> has encountered a new Error:</h6>
+<table class="table-all" style="width: 70%;margin: 3%;background-color: white;box-sizing: inherit;border: 1px solid #ccc;border-collapse: collapse;font-size: 13px;font-weight: bold;border-spacing: 0;display: table;">
+   
+    <tr style="box-sizing: inherit;border-bottom: 1px solid #ddd;">
+      <td style="width: 30%;background-color: #00a1df;color: white;box-sizing: inherit;border: 1px solid black;border-collapse: collapse;font-size: 13px;font-weight: bold;padding: 8px 8px;display: table-cell;text-align: left;vertical-align: top;padding-left: 16px;"><b style="box-sizing: inherit;font-weight: bolder;">Environment</b></td>
+      <td style="width: 70%;box-sizing: inherit;border: 1px solid black;border-collapse: collapse;font-size: 13px;font-weight: bold;padding: 8px 8px;display: table-cell;text-align: left;vertical-align: top;"><b style="box-sizing: inherit;font-weight: bolder;">#[upper(p('mule.env'))]</b></td>
+      
+    </tr>
+    <tr style="box-sizing: inherit;border-bottom: 1px solid #ddd;">
+      <td style="width: 30%;background-color: #00a1df;color: white;box-sizing: inherit;border: 1px solid black;border-collapse: collapse;font-size: 13px;font-weight: bold;padding: 8px 8px;display: table-cell;text-align: left;vertical-align: top;padding-left: 16px;">Application Name</td>
+      <td style="box-sizing: inherit;border: 1px solid black;border-collapse: collapse;font-size: 13px;font-weight: bold;padding: 8px 8px;display: table-cell;text-align: left;vertical-align: top;">#[p('api.appName')]</td>
+      
+    </tr>
+    <tr style="box-sizing: inherit;border-bottom: 1px solid #ddd;">
+      <td style="width: 30%;background-color: #00a1df;color: white;box-sizing: inherit;border: 1px solid black;border-collapse: collapse;font-size: 13px;font-weight: bold;padding: 8px 8px;display: table-cell;text-align: left;vertical-align: top;padding-left: 16px;">Error Code</td>
+      <td style="box-sizing: inherit;border: 1px solid black;border-collapse: collapse;font-size: 13px;font-weight: bold;padding: 8px 8px;display: table-cell;text-align: left;vertical-align: top;">#[vars.httpStatus]</td>
+     
+    </tr>
+     <tr style="box-sizing: inherit;border-bottom: 1px solid #ddd;">
+      <td style="width: 30%;background-color: #00a1df;color: white;box-sizing: inherit;border: 1px solid black;border-collapse: collapse;font-size: 13px;font-weight: bold;padding: 8px 8px;display: table-cell;text-align: left;vertical-align: top;padding-left: 16px;">Correlation Id</td>
+      <td style="box-sizing: inherit;border: 1px solid black;border-collapse: collapse;font-size: 13px;font-weight: bold;padding: 8px 8px;display: table-cell;text-align: left;vertical-align: top;">#[correlationId]</td>
+     
+    </tr>
+     <tr style="box-sizing: inherit;border-bottom: 1px solid #ddd;">
+      <td style="width: 30%;background-color: #00a1df;color: white;box-sizing: inherit;border: 1px solid black;border-collapse: collapse;font-size: 13px;font-weight: bold;padding: 8px 8px;display: table-cell;text-align: left;vertical-align: top;padding-left: 16px;">Flow Name</td>
+      <td style="box-sizing: inherit;border: 1px solid black;border-collapse: collapse;font-size: 13px;font-weight: bold;padding: 8px 8px;display: table-cell;text-align: left;vertical-align: top;">#[vars.flowName]</td>
+     
+    </tr>
+    <tr style="box-sizing: inherit;border-bottom: 1px solid #ddd;">
+      <td style="width: 30%;background-color: #00a1df;color: white;box-sizing: inherit;border: 1px solid black;border-collapse: collapse;font-size: 13px;font-weight: bold;padding: 8px 8px;display: table-cell;text-align: left;vertical-align: top;padding-left: 16px;">Error Message</td>
+      <td style="box-sizing: inherit;border: 1px solid black;border-collapse: collapse;font-size: 13px;font-weight: bold;padding: 8px 8px;display: table-cell;text-align: left;vertical-align: top;">#[vars.errorMessage]</td>
+     
+    </tr> 
+<tr style="box-sizing: inherit;border-bottom: 1px solid #ddd;">
+      <td style="width: 30%;background-color: #00a1df;color: white;box-sizing: inherit;border: 1px solid black;border-collapse: collapse;font-size: 13px;font-weight: bold;padding: 8px 8px;display: table-cell;text-align: left;vertical-align: top;padding-left: 16px;">Error Description</td>
+      <td style="box-sizing: inherit;border: 1px solid black;border-collapse: collapse;font-size: 13px;font-weight: bold;padding: 8px 8px;display: table-cell;text-align: left;vertical-align: top;">#[error.detailedDescription]</td>
+     
+    </tr> 	
+    
+  </table>
+    
+    <h6 align="left" style="margin: 3%;padding-bottom: 2%;box-sizing: inherit;font-size: 16px;font-family: &quot;Segoe UI&quot;,Arial,sans-serif;font-weight: 400;">For more details, Please check CloudHub logs.</h6>
+
+  </div>
+
+<!-- End page content -->
+</div>
+
+</header></body>
+</html>

@@ -1,0 +1,16 @@
+#SMTP details
+smtp:
+  host: "mail.fnicloud.com"
+  port: "25"
+  userName: "testingn999@gmail.com"
+  password: "erpx gmru zrfo zxsw"
+  send:
+    errorNotification:
+      fromAddress: "testingn999@gmail.com"
+      toAddresses: "testingn999@gmail.com"  #comma seperated values
+      ccAddresses: "" #comma seperated values
+      bccAddresses: "" #comma seperated values
+
+api:
+  name: "File Transfer Process API"
+  appName: "file-transfer-api"
